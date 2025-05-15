@@ -3,10 +3,145 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./stayl.scss" />
+    <title>insure-landing-page</title>
+    <link rel="stylesheet" href="./css/stayl.min.css" />
   </head>
   <body>
-    <h1>scss</h1>
+    <header class="header">
+      <div class="header__container container">
+        <a href="">
+          <img
+            src="./images/logo.svg"
+            alt="sunnyside logo"
+            width="111.22"
+            height="18"
+        /></a>
+
+        <nav class="sitenav">
+          <ul class="sitenav__list">
+            <li class="sitenav__item">
+              <a class="sitenav__link" id="yelov" href="#">HOW WE WORK</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="#"> BLOG</a>
+            </li>
+
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="#">ACCOUNT</a>
+            </li>
+            <li>
+              <a class="btn" href=".#">VIEW PLANS</a>
+            </li>
+          </ul>
+        </nav>
+        <button id="show-btn" class="header__toggle-btn">
+          <img src="" alt="" />
+          <img
+            src="./images/icon-hamburger.svg"
+            alt=""
+            width="32"
+            height="32"
+          />
+        </button>
+      </div>
+      <div class="header__hidden">
+        <nav class="header__hidden__nav">
+          <ul class="sitenav__list">
+            <li class="sitenav__item">
+              <a class="sitenav__link" id="yelov" href="#">HOW WE WORK</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="#"> BLOG</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="sitenav__link" href="#">ACCOUNT</a>
+            </li>
+            <li class="sitenav__item">
+              <a class="btn" href="#">VIEW PLANS</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="main-section">
+        <div class="main--farc">
+          <div class="main-containor container">
+            <div class="maion--artical">
+              <div class="argumend"></div>
+              <h1 class="artical__name">
+                Humanizing <br />
+                your insurance.
+              </h1>
+              <p class="artical__titl">
+                Get your life insurance coverage easier and faster. We blend our
+                expertise <br />
+                and technology to help you find the plan that’s right for you.
+                Ensure you <br />
+                and your loved ones are protected.
+              </p>
+              <a class="btn--wait" href="">VIEW PLANS</a>
+            </div>
+            <div class="main--faley">
+              <img src="alt" ="" />
+              <img
+                src="./images/image-intro-desktop.jpg"
+                alt=" famli img"
+                class="faley__img"
+                width="540"
+                height="650"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="features-section">
+        <div class="container">
+          <h2 class="section-title">We're different</h2>
+          <div class="features-grid">
+            <div class="feature-item">
+              <div class="icon">
+                <img src="icon-snappy.svg" alt="Snappy Process Icon" />
+              </div>
+              <h3>Snappy Process</h3>
+              <p>
+                Our application process can be completed in minutes, not hours.
+                Don’t get stuck filling in tedious forms.
+              </p>
+            </div>
+            <div class="feature-item">
+              <div class="icon">
+                <img src="icon-affordable.svg" alt="Affordable Prices Icon" />
+              </div>
+              <h3>Affordable Prices</h3>
+              <p>
+                We don’t want you worrying about high monthly costs. Our prices
+                may be low, but we still offer the best coverage possible.
+              </p>
+            </div>
+            <div class="feature-item">
+              <div class="icon">
+                <img src="icon-people.svg" alt="People First Icon" />
+              </div>
+              <h3>People First</h3>
+              <p>
+                Our plans aren’t full of conditions and clauses to prevent
+                payouts. We make sure you’re covered when you need it.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script>
+      const toggleBtn = document.querySelector(".header__toggle-btn");
+      const hiddenMenu = document.querySelector(".header__hidden");
+      const body = document.body;
+
+      toggleBtn.addEventListener("click", () => {
+        hiddenMenu.classList.toggle("show");
+        body.classList.toggle("no-scroll");
+      });
+    </script>
   </body>
 </html>

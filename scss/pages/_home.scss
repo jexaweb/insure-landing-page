@@ -1,0 +1,106 @@
+.main-section {
+  background-color: #2d2641;
+  background-image: url("../images/bg-pattern-intro-right-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+.main--farc {
+}
+.main-containor {
+  display: flex;
+}
+
+.maion--artical {
+  padding-top: 16.9rem;
+  padding-bottom: 21.7rem;
+}
+.argumend {
+  width: 150px;
+  height: 1px;
+  background-color: #ffffff;
+
+  margin-bottom: 6.3rem;
+}
+.artical__name {
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  font-size: 7.2rem;
+
+  letter-spacing: -1px;
+  color: #ffffff;
+  padding-bottom: 1.6rem;
+}
+.artical__titl {
+  font-family: "Karla";
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #ffffff;
+  padding-bottom: 4.4rem;
+}
+
+.main--faley {
+  position: relative;
+}
+.faley__img {
+  position: absolute;
+  top: 26rem;
+  left: 10rem;
+  z-index: 0;
+}
+
+// .features-section
+
+.features-section {
+  padding-top: 30.5rem;
+  //   padding: 5rem 1.25rem; /* 80px 20px */
+  background-color: #ffffff;
+  text-align: center;
+  font-family: "Georgia", serif;
+}
+
+// .container {
+//   max-width: 68.75rem; /* 1100px */
+//   margin: 0 auto;
+// }
+
+.section-title {
+  font-size: 2.25rem; /* 36px */
+  font-weight: bold;
+  margin-bottom: 3.125rem; /* 50px */
+  color: #2d2d2d;
+}
+
+.features-grid {
+  display: flex;
+  gap: 2.5rem; /* 40px */
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.feature-item {
+  flex: 1;
+  min-width: 17.5rem; /* 280px */
+  max-width: 20.625rem; /* 330px */
+}
+
+.feature-item .icon {
+  margin-bottom: 1.25rem; /* 20px */
+}
+
+.feature-item img {
+  width: 3.75rem; /* 60px */
+  height: 3.75rem; /* 60px */
+}
+
+.feature-item h3 {
+  font-size: 1.25rem; /* 20px */
+  font-weight: bold;
+  margin-bottom: 0.625rem; /* 10px */
+  color: #2d2d2d;
+}
+
+.feature-item p {
+  color: #777;
+  font-size: 0.9375rem; /* 15px */
+  line-height: 1.6;
+}

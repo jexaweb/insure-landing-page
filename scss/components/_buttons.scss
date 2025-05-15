@@ -1,0 +1,37 @@
+.btn {
+  color: #2c2830;
+  background-color: transparent;
+  padding: 1.3rem 2.8rem 1.2rem 2.8rem;
+  border: 0.1rem solid #2c2830;
+  font-weight: 700;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  &:hover {
+    background-color: #2c2830;
+    color: #ffffff;
+  }
+}
+
+.btn--wait {
+  color: #ffffff;
+  background-color: transparent;
+  padding: 1.3rem 2.8rem 1.2rem 2.8rem;
+  border: 0.1rem solid #ffffff;
+  font-weight: 700;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  &:hover {
+    background-color: #ffffff;
+    color: #2c2830;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .btn {
+    padding: 1.7rem 9.6rem 1.7rem 9.6rem;
+    border: 0.1rem solid #ffffff;
+    color: #ffffff;
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+}
