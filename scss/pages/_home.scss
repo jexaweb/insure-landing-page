@@ -1,11 +1,28 @@
+.main {
+  // pointer-events: none;
+  // background-image: none;
+}
+.main--val {
+  background-image: url("../images/bg-pattern-how-we-work-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .main-section {
+  position: relative;
+}
+.mabil--img {
+  display: none;
+}
+.main--farc {
+  position: relative;
+  z-index: 2;
   background-color: #2d2641;
   background-image: url("../images/bg-pattern-intro-right-desktop.svg");
   background-repeat: no-repeat;
-  background-position: right bottom;
+  background-position: right bottom 15rem;
+  pointer-events: none;
 }
-.main--farc {
-}
+
 .main-containor {
   display: flex;
 }
@@ -39,68 +56,182 @@
 }
 
 .main--faley {
-  position: relative;
 }
+
 .faley__img {
+  z-index: 1;
+  position: relative;
+  top: 20rem;
+  left: 8.8rem;
+  max-width: 100%;
+  height: 650px;
+  object-fit: cover;
+  border-radius: 0, 1rem;
+}
+.bg__img {
   position: absolute;
-  top: 26rem;
-  left: 10rem;
-  z-index: 0;
+  top: 50rem;
+}
+.mabil--bg__img {
+  display: none;
 }
 
-// .features-section
+// reponsib
 
+@media screen and (max-width: 1220px) {
+  .faley__img {
+    // max-width: 100%;
+    height: 550px;
+  }
+}
+@media screen and (max-width: 1120px) {
+  .faley__img {
+    width: 340px;
+    height: 450px;
+  }
+}
+
+@media screen and (max-width: 1010px) {
+  .faley__img {
+    top: 2rem;
+  }
+
+  .main-containor {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  // .main {
+
+  // }
+  .main--val {
+    background-image: url("../images/bg-pattern-how-we-work-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .faley__img {
+    display: none;
+  }
+
+  .mabil--img {
+    display: block;
+    max-width: 100%;
+  }
+  .main-containor {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .main--farc {
+    background-image: none;
+    background-image: url("../images/bg-pattern-intro-left-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+  .bg__img {
+    display: none;
+  }
+  .btn--wait {
+    margin-left: 12rem;
+  }
+
+  @media screen and (max-width: 390px) {
+    .mabil--bg__img {
+      display: block;
+      position: absolute;
+      bottom: -25rem;
+      left: 10rem;
+    }
+  }
+
+  .artical__name {
+    font-family: "DM Serif Display";
+    font-weight: 400;
+    font-size: 4.8rem;
+    letter-spacing: -1px;
+    color: #ffffff;
+    padding-bottom: 1.6rem;
+    text-align: center;
+  }
+  .artical__titl {
+    text-align: center;
+    font-family: "Karla";
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #ffffff;
+    padding-bottom: 3.2rem;
+  }
+
+  .mabil--bg__img {
+    display: block;
+    position: absolute;
+    bottom: -25rem;
+    left: 22rem;
+  }
+}
+// .features-section
 .features-section {
   padding-top: 30.5rem;
-  //   padding: 5rem 1.25rem; /* 80px 20px */
+  padding-bottom: 15.8rem;
+
   background-color: #ffffff;
-  text-align: center;
-  font-family: "Georgia", serif;
 }
 
-// .container {
-//   max-width: 68.75rem; /* 1100px */
-//   margin: 0 auto;
-// }
-
 .section-title {
-  font-size: 2.25rem; /* 36px */
-  font-weight: bold;
-  margin-bottom: 3.125rem; /* 50px */
-  color: #2d2d2d;
+  font-family: "DM Serif Display";
+  font-size: 7.2rem;
+  font-weight: 400;
+  margin-bottom: 9.6rem;
+  color: #2c2830;
+  letter-spacing: -1px;
 }
 
 .features-grid {
   display: flex;
-  gap: 2.5rem; /* 40px */
+  gap: 2.5rem;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .feature-item {
   flex: 1;
-  min-width: 17.5rem; /* 280px */
-  max-width: 20.625rem; /* 330px */
 }
 
 .feature-item .icon {
-  margin-bottom: 1.25rem; /* 20px */
+  margin-bottom: 1.25rem;
 }
 
 .feature-item img {
-  width: 3.75rem; /* 60px */
-  height: 3.75rem; /* 60px */
+  width: 3.75rem;
+  height: 3.75rem;
 }
 
 .feature-item h3 {
-  font-size: 1.25rem; /* 20px */
-  font-weight: bold;
-  margin-bottom: 0.625rem; /* 10px */
-  color: #2d2d2d;
+  font-size: 2.8rem;
+  font-weight: 400;
+  margin-bottom: 1.6rem;
+  letter-spacing: -0.39px;
+  color: #2c2830;
 }
 
 .feature-item p {
-  color: #777;
-  font-size: 0.9375rem; /* 15px */
+  font-weight: 400;
+
+  color: #837d88;
+  font-size: 1.6rem;
   line-height: 1.6;
+}
+
+@media screen and (max-width: 450px) {
+  .section-title {
+    font-size: 4.8rem;
+    margin-bottom: 0, 8rem;
+    text-align: center;
+  }
+
+  .features-grid {
+    flex-direction: column;
+    text-align: center;
+  }
 }
